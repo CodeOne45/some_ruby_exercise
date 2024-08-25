@@ -1,1 +1,1 @@
-# some_ruby_exercise
+# some_ruby_exercises
