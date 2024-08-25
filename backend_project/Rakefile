@@ -1,0 +1,46 @@
+task :default => :generate_output
+
+task :level1 do
+  ruby "level1/main.rb"
+end
+
+task :level2 do
+  ruby "level2/main.rb"
+end
+
+task :level3 do
+  ruby "level3/main.rb"
+end
+
+task :level4 do
+  ruby "level4/main.rb"
+end
+
+task :level5 do
+  ruby "level5/main.rb"
+end
+
+task :clean do
+  rm_f "level1/data/output.json"
+  rm_f "level2/data/output.json"
+  rm_f "level3/data/output.json"
+  rm_f "level4/data/output.json"
+  rm_f "level5/data/output.json"
+  puts "Cleaned output files"
+end
+
+task :generate_all => [:level1, :level2, :level3, :level4, :level5] do
+  puts "Output files generated"
+end
+
+task :help do
+  puts "Usage: rake [command]"
+  puts "Commands:"
+  puts "  level1: Run level1"
+  puts "  level2: Run level2"
+  puts "  level3: Run level3"
+  puts "  level4: Run level4"
+  puts "  level5: Run level5"
+  puts "  clean: Clean all output files"
+  puts "  generate_all: Run all levels"
+end

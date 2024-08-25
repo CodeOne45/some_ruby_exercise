@@ -1,0 +1,2 @@
+Exo 2 - CSS: https://codepen.io/aman-malik/pen/abgKbWb
+Exo 4 - HTTP GET: https://codepen.io/aman-malik/pen/yLdELjw
